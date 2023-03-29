@@ -1,0 +1,20 @@
+[package]
+name = "yt-dlp-repl"
+version = "1.0.0"
+authors = ["Piotr Bajdek <piotr.bajdek@proton.me>"]
+edition = "2021"
+description = "a frontend for yt-dlp providing an interactive shell mode (REPL)"
+readme = "README.md"
+repository = "https://github.com/piotrbajdek/yt-dlp-repl"
+license = "MIT"
+keywords = ["download", "downloader", "youtube", "yt-dlp", "video"]
+categories = ["command-line-utilities", "multimedia", "network-programming"]
+
+[profile.release]
+codegen-units = 1
+strip = true
+
+[package.metadata.generate-rpm]
+assets = [
+{ source = "target/release/yt-dlp-repl", dest = "/usr/bin/yt-dlp-repl", mode = "755" }
+]
