@@ -40,6 +40,10 @@ _sudo cp yt-dlp-repl /usr/bin/_
 
 _sudo cp yt-dlp-repl /var/usrlocal/bin/_
 
+**3c.** As an alternative, consider installing locally in the `~/.local/bin/` directory:
+
+_cp yt-dlp-repl $HOME/.local/bin/_
+
 ## METHOD 3 – DISTRO-SPECIFIC PACKAGES
 
 **[Recommended for most users]**
